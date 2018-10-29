@@ -53,7 +53,7 @@ $handler_CallStoreButton_Click=
     $objConnection.Close()
     Set-Clipboard $number
     $IE= new-object -ComObject "InternetExplorer.Application"
-    $IE.navigate2(“CISCOTEL://" + $number)
+    $IE.navigate2(â€œCISCOTEL://" + $number)
 }
 $handler_GetNumButton_Click=
 {
@@ -82,8 +82,6 @@ $HelpDeskForm.WindowState = $InitialFormWindowState
 #Form Style Code
 $HelpDeskForm.Text = "Phone Wizard"
 $HelpDeskForm.Name = "HelpDeskForm"
-$HelpDeskForm.Icon = [System.Drawing.Icon]::ExtractAssociatedIcon('Y:\AndrewT\wizardcolonel.ico')
-$HelpDeskForm.ShowIcon = [System.Drawing.Icon]::ExtractAssociatedIcon('Y:\AndrewT\wizardcolonel.ico')
 $HelpDeskForm.DataBindings.DefaultDataSourceUpdateMode = 0
 $HelpDeskForm.TopMost = $true
 $System_Drawing_Size = New-Object System.Drawing.Size
